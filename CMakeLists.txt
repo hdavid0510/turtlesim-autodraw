@@ -57,6 +57,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_service_files(
   FILES
   circle.srv
+  polygon.srv
   square.srv
 )
 
@@ -157,6 +158,14 @@ target_link_libraries(draw_square_client ${catkin_LIBRARIES})
 add_executable(draw_square_server src/draw_square_server.cpp)
 add_dependencies(draw_square_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(draw_square_server ${catkin_LIBRARIES})
+
+add_executable(draw_polygon_client src/draw_polygon_client.cpp)
+add_dependencies(draw_polygon_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(draw_polygon_client ${catkin_LIBRARIES})
+
+add_executable(draw_polygon_server src/draw_polygon_server.cpp)
+add_dependencies(draw_polygon_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(draw_polygon_server ${catkin_LIBRARIES})
 
 #############
 ## Install ##
