@@ -1,0 +1,10 @@
+<launch>
+	<!-- <arg name="side_length" default="2" />
+	<arg name="rotation" default="1" />
+	<arg name="speed" default="1" />
+	<arg name="radius" default="2" /> -->
+
+	<node name="turtlesim" pkg="turtlesim" type="turtlesim_node" />
+	<node name="Client" pkg = "turtlesim_draw" type="draw_polygon_server" output = "screen" respawn="true" />
+	<node name="Server" pkg = "turtlesim_draw" type="draw_polygon_client" output = "screen" />
+</launch>

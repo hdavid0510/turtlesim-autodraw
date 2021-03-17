@@ -1,0 +1,4 @@
+int32 sidenum
+float32 sidelength
+int32 rotations
+---
