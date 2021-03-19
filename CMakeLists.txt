@@ -167,6 +167,14 @@ add_executable(draw_polygon_server src/draw_polygon_server.cpp)
 add_dependencies(draw_polygon_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(draw_polygon_server ${catkin_LIBRARIES})
 
+add_executable(draw_circle_client src/draw_circle_client.cpp)
+add_dependencies(draw_circle_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(draw_circle_client ${catkin_LIBRARIES})
+
+add_executable(draw_circle_server src/draw_circle_server.cpp)
+add_dependencies(draw_circle_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(draw_circle_server ${catkin_LIBRARIES})
+
 #############
 ## Install ##
 #############

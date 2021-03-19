@@ -5,6 +5,6 @@
 	<arg name="radius" default="2" /> -->
 
 	<node name="turtlesim" pkg="turtlesim" type="turtlesim_node" />
-	<node name="Client" pkg = "turtlesim_autodraw" type="draw_polygon_server" output = "screen" respawn="true" />
-	<node name="Server" pkg = "turtlesim_autodraw" type="draw_polygon_client" output = "screen" />
+	<node name="Client" pkg = "turtlesim_autodraw" type="draw_circle_server" output = "screen" respawn="true" />
+	<node name="Server" pkg = "turtlesim_autodraw" type="draw_circle_client" output = "screen" />
 </launch>
