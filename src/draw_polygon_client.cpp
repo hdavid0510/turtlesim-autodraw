@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 		// 입력받은 문자열 버퍼
 		std::string inputString;
 
-		// 한 변 길이 받아오기
+		// 변 개수 받아오기
 		std::cout << "Enter Number of Sides : ";
 		std::cin.clear(); // 기존에 혹시 모를 처리되지 않은 입력값을 삭제, 입력값 오류 방지
 		std::getline(std::cin, inputString); // 엔터키 칠 때까지 받음
